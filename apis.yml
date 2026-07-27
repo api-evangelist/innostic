@@ -1,7 +1,30 @@
 aid: innostic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/innostic.png
 name: innostic
-description: innostic is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Innostic is a China-based medical-device distribution and healthcare supply-chain
+  company, established in 2015 and originally profiled as a portfolio company of Qiming
+  Venture Partners. Its public web presence at www.innostic.com now resolves to the
+  Shanghai Jianfa Zhixin Medical Technology group, which operates across medical-device
+  distribution, in-vitro diagnostics (IVD), hospital supply-chain management (SPD and
+  centralized distribution), and consumer healthcare supply-chain services for
+  manufacturers, distributors, and hospitals. The company is a B2B healthcare logistics
+  and distribution firm; its only online systems are internal, login-gated operational
+  platforms (Zhixin, U9, OA). As of this enrichment pass it publishes no public developer
+  portal, API documentation, OpenAPI/AsyncAPI specification, SDK, MCP server, or
+  /.well-known discovery surface. This profile records verified company identity and a
+  domain-security probe; there is no public API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/innostic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +34,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Medical Devices
+- Supply Chain
+- Distribution
+- In Vitro Diagnostics
+- Hospital
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
 - type: Website
-  url: https://innostic.com
+  url: https://www.innostic.com
+- type: DomainSecurity
+  url: security/innostic-domain-security.yml
